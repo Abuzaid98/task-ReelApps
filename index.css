@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fLight {
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+abbr[title] {
+    cursor: help;
+}
+
+iframe {
+    border: none;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1285px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.mt-50 {
+    margin-top: -50px;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1.5rem;
+}
+
+[class^=col-] {
+    flex: 1 0 auto;
+    padding: 0 1.5rem;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+}
+
+.col-5 {
+    flex-basis: 41.66%;
+    max-width: 41.66%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+}
+
+.col-11 {
+    flex-basis: 91.66%;
+    max-width: 91.66%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-image: url(./img/bg1.webp);
+    min-height: 765px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+header .logo h1 {
+    font-size: 2.4rem;
+}
+
+header .hero-text {
+    padding: 200px 0;
+}
+
+header .hero-text h1 {
+    font-size: 7.2rem;
+
+}
+
+header .hero-text p {
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+
+.middle {
+    padding: 8rem 0;
+    background-image: url(./img/bg2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #000;
+    /* min-height: 3718px; */
+}
+
+.middle .circles .row>div {
+    padding: 3rem;
+}
+
+.middle .circle {
+    position: relative;
+}
+
+.middle .circle>div {
+    position: absolute;
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    top: 7%;
+    left: 11%;
+    border-radius: 50%;
+}
+
+.middle .circle .whiteCricle2 {
+    top: 15%;
+    left: 15%;
+}
+
+.middle .circle .whiteCricle3 {
+    top: 5%;
+    left: 8%;
+}
+
+.circle .text p {
+    position: relative;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.circle .text p::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    width: 37px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle .text span {
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    color: #4d4d4d;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+/* .............. */
+
+.middle .cards {
+    padding-top: 8rem;
+}
+
+.middle .cards .card {
+    padding: 6rem 3.5rem;
+    box-shadow: 0 0 12px #0000002b;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.middle .cards .card .icon {
+    text-align: center;
+    padding-bottom: 3rem;
+    height: 150px;
+}
+
+.middle .cards .card h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    letter-spacing: 1px;
+}
+
+.middle .cards .card p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+/* ---------- */
+
+.middle .apps h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    padding: 120px 0;
+    font-size: 6rem;
+    letter-spacing: 3px;
+}
+
+.middle .apps .box {
+    padding: 5rem 3.5rem;
+    box-shadow: 0 0 12px #00000025;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 11rem;
+}
+
+.middle .apps .box h3 {
+    font-weight: bold;
+    font-size: 3.7rem;
+    padding-bottom: 3rem;
+    letter-spacing: 3px;
+}
+
+.middle .apps .box p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.middle .apps .box .image {
+    margin-top: -34%;
+}
+
+.middle .apps .box .btn {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.middle .apps .box .btn button {
+    color: #fff;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    padding: 1.7rem 5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+}
+
+/* ............... */
+
+.middle .reviews {
+    padding: 10rem 0;
+}
+
+.middle .reviews .review .slide {
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.middle .reviews .review .slide .content {
+    text-align: center;
+}
+
+.middle .reviews .review .slide .comma {
+    margin: 30px 0 0 30px;
+}
+
+.middle .reviews .review .slide .content img {
+    margin-top: -15%;
+}
+
+.middle .reviews .review .slide .content h3 {
+    font-size: 3rem;
+}
+
+.middle .reviews .review .slide .content div {
+    font-size: 3rem;
+    margin-top: -1rem;
+}
+
+.middle .reviews .review .slide .content p {
+    font-size: 1.4rem;
+    padding: 5rem 0 9rem;
+    text-align: justify;
+}
+
+.middle .reviews .dots {
+    margin-top: 3.5rem;
+}
+
+.middle .reviews .dots ul li {
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 12px;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #d0d0d0;
+}
+
+.middle .reviews .dots ul li:not(:nth-child(3)) {
+    background-color: #d0d0d0;
+}
+
+.middle .reviews .btn {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.middle .reviews .btn button {
+    color: #fff;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    padding: 1.7rem 5rem;
+    border: 0;
+    outline: 0;
+    border-radius: 25px;
+    box-shadow: 9px 5px 13px #00000040;
+}
+
+/* ----------------------------------------------------------------- */
+
+.form {
+    padding: 8rem 0 4rem;
+    background: url(./img/bg3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 772px;
+}
+
+.form form {
+    max-width: 600px;
+    border-radius: 7px;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem 6rem 1.5rem;
+}
+
+.form form h2 {
+    letter-spacing: 1px;
+    font-size: 3.6rem;
+    margin-bottom: 6.5rem;
+}
+
+.form form input,
+.form form select {
+    padding: 10px 1px;
+    border: 0;
+    border-bottom: 1px solid;
+    outline: 0;
+    font-size: 1.6rem;
+    margin-bottom: 7.5rem;
+}
+
+.form form select {
+    margin-bottom: 1rem;
+}
+
+.form form .btn {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.form form .btn button {
+    color: #fff;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    padding: 2.5rem 9rem;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    box-shadow: 9px 5px 13px #00000040;
+    font-size: 1.6rem;
+}
+
+.form form .call {
+    text-align: center;
+
+}
+
+.form form .call p:first-child {
+    margin-top: 20px;
+}
+
+.form form .call .number {
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+/* -------------------------------------------- */
+
+footer {
+    background-color: #32004b;
+    padding: 13rem 0 8rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+footer ul li {
+    color: #ffffffa8;
+}
+
+footer .icons {
+    margin: 5rem 0;
+
+}
+
+footer .icons ul li a {
+    color: #32004b;
+}
+
+footer .icons ul li {
+    color: #32004b;
+    background-color: #bfb0c7;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in;
+}
+
+footer .icons ul li:hover {
+    background-color: #fff;
+}
+
+footer p {
+    font-size: 1.4rem;
+    color: #ffffffa8;
+}
+
+footer h3 {
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+footer .sub {
+    padding: 3rem 0;
+}
+
+footer .sub input {
+    outline: 0;
+    border: 1px solid #ffffff2f;
+    width: 325px;
+    height: 53px;
+    border-radius: 50px;
+    background-color: #28033b;
+    color: #ffffffa8;
+    padding: 5px 3rem;
+}
+
+footer .sub button {
+    color: #fff;
+    background: linear-gradient(90deg, #f57e41, #ec353f);
+    padding: 1.8rem 5rem;
+    height: 53px;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    box-shadow: 9px 5px 13px #00000040;
+    font-size: 1.6rem;
+}
+
+/* ----------------------- */
+
+@media screen and (max-width:770px) {
+    html {
+        font-size: 7px;
+    }
+
+    .col-1-m {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .col-6-m {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-10-m {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .col-12-m {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    header .hero-text {
+        padding: 100px 15px;
+    }
+
+    .mt-50 {
+        margin-top: 0;
+    }
+
+    .middle .cards .card {
+        margin-bottom: 3rem;
+    }
+
+    .middle .apps .box {
+        margin-bottom: 16rem;
+    }
+
+    .middle .reviews .review .slide .content img {
+        margin-top: -18%;
+        width: 120px;
+    }
+
+    .middle .reviews .review .slide .comma {
+        margin: 10px 0 0 10px;
+        width: 33px;
+    }
+
+    footer p {
+        margin-bottom: 16px;
+    }
+
+    footer .sub input {
+        width: 250px;
+    }
+}
