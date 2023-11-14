@@ -12,3 +12,5 @@ numbers.forEach(number=>{
         }
     },1)
 })
+
+// animation
